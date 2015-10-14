@@ -4,7 +4,7 @@ Butineur Autoloader
 
 
 
-This is a simple [BSR-0] (https://github.com/lingtalfi/universe/blob/master/planets/BumbleBee/Autoload/convention.bsr0.eng.md)
+This is a simple [BSR-0] (https://github.com/lingtalfi/BumbleBee/blob/master/Autoload/convention.bsr0.eng.md)
 autoloader for any php project.
 
 
@@ -53,4 +53,4 @@ in a matter of **two lines of code!**.
 
 
 
-For another concrete example, please look in the [BSR-0 convention file] (https://github.com/lingtalfi/universe/blob/master/planets/BumbleBee/Autoload/convention.bsr0.eng.md).
+For another concrete example, please look in the [BSR-0 convention file] (https://github.com/lingtalfi/BumbleBee/blob/master/Autoload/convention.bsr0.eng.md).
