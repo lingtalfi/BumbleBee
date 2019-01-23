@@ -8,6 +8,17 @@ This is a simple [BSR-0](https://github.com/lingtalfi/BumbleBee/blob/master/Auto
 
 
 
+Summary
+-----------
+- [What's an autoloader?](#whats-an-autoloader)
+- [How to use?](#how-to-use)
+    - [Basic example](#basic-example)
+    - [Multiple directories](#multiple-directories)
+    - [Prefix](#prefix)
+
+
+
+
 What's an autoloader?
 -------------------
 
@@ -94,7 +105,7 @@ Note: don't forget to call the **start** method to initialize the autoloader.
 
 ### Multiple directories
 
-We can also add other **$root** directories if we want, and we can even register them after the call to the start method.
+We can also add other **$root** directories if we want, and we can even register them after the call to the **start** method.
 
 So for instance the following php code:
 
@@ -134,15 +145,15 @@ You get the idea.
 
 ### Prefix
 
-Another cool thing that the Butineur autoloader let us do is change the prefix for a given location (aka **root** directory.
+Another cool thing that the Butineur autoloader let us do is change the prefix for a given location (aka **root** directory).
 
-The prefix is basically the first component of the fully-qualified class name, and it doesn't have a filesystem representation: it's virtual.
+The prefix is basically the first component of the fully-qualified class name, and its particularity is that it doesn't have a filesystem representation: it's just a virtual component.
 
 So for instance if you define a **root** directory with the "Controller" prefix, like this for instance:
 
 ```php
 ButineurAutoLoader::getInst()
-    ->addLocation("/path/to/controller", "Controller")
+    ->addLocation("/path/to/controller", "Controller") // notice the "Controller" prefix (second argument) 
     ->start();
 ```
 
@@ -162,9 +173,9 @@ class DemoController {
 
 ```
 
-Notice that the first component of the namespace is "Controller".
+Notice that the first component of the namespace is still "Controller".
 
-But then the Butineur autoloader will look here:
+But then the Butineur autoloader will look in the following directory:
 
 - /path/to/controller/MyCompany/Test/DemoController.php
 
