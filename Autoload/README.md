@@ -53,7 +53,7 @@ ButineurAutoLoader::getInst()
 ```
 
 
-Then we've just define the **$root** directory being **/path/to/class**, and so now if we call the class like this:
+Then we've just define the **$root** directory with the value of **/path/to/class**, and so now if we call the class like this:
 
 ```php
 use MyCompany\Math\ArithmeticUtils;
