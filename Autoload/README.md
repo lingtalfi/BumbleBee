@@ -49,7 +49,7 @@ So for instance if I write this php code:
 ```php
 ButineurAutoLoader::getInst()
     ->addLocation("/path/to/class")
-    ->start(); // the start method register the autoloading function to php
+    ->start(); // the start method registers the autoloading function to php
 ```
 
 
