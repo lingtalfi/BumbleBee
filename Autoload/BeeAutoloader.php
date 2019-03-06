@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BumbleBee\Autoload;
+namespace Ling\BumbleBee\Autoload;
 
 /**
  * BeeAutoloader

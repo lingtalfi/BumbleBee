@@ -12,7 +12,7 @@ Install
 
 Using the [uni tool](https://github.com/lingtalfi/universe-naive-importer)
 ```bash
-uni import BumbleBee
+uni import Ling/BumbleBee
 ```
 
 
